@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="descriptin" content="@keyframes, javascript, js, observer">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="cursor cursor__rounded"></div>
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <div class="preloader__logo-line _left"></div>
+                <div class="preloader__logo-line _right"></div>
+                <div class="preloader__logo-sun"></div>
+            </div>
+            <div class="preloader__text">0%</div>
+        </div>
+    </div>
+    <header class="container-menu">
+        <div class="container-menu__nav">
+
+            <div class="row">
+                <div class="navbar accordion">
+                    <div class="navbar-conteiner">
+                        <div class="container-menu__logo">
+                            <div class="logotype"></div>
+                        </div>
+                        <div class="navbar-heder accordion-head" id="dropdown">
+                            <button type="button" class="navbar-toggle rs-menu-form__burger" >
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse" data-toggle-id="dropdown">
+                        <ul class="nav text-uppercase accordion-content">
+                            <li class="menu_places active"><a href="project.html">Проекты</a></li>
+                            <li class="logo"><a href="index.html" data-cursor="cursor-scale, darken">
+                                <div class="logotype"></div>
+                            </a></li>
+                            <li class="" data-cursor="cursor-scale, darken"><a href="http://helios.sborkademo.com/" target="_blank">Прототип</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+    <section class="wrapper">
+        <div class="content">
+            <div class="content__full-screen">
+                  <div class="content__title">
+                    <h1 class="content__h1">Проекты</h1>
+                    <div class="content__subtitle">
+                        За более чем 10 лет нашей командой было построено и введено в эксплуатацию <span class="text-accent">более 2.5 миллионов кв. м площади объектов недвижимости различного назначения.</span> 
+                    </div>
+                </div>
+
+                <!-- <div class="content__filter"> -->
+                <div class="filter__content">
+                    <div class="filter__title">Фильтр</div>
+                    <div class="filter__list">
+                        <div class="radio">
+                            <div class="button button__clear" type="radio" data-cursor="cursor-scale, darken">
+                                <input id="completed" type="radio" name="gender" value="male" checked>
+                                <!-- <label class="label-checked" for="completed">Завершенные</label> -->
+                                <label for="completed">Завершенные</label>
+                            </div>
+                            <div class="button button__clear" type="radio" data-cursor="cursor-scale, darken">
+                                <input id="plan" type="radio" name="gender" value="female">
+                                <label for="plan">В реализации</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content__places">
+                    <div class="carousel">
+
+                        <div class="carousel__item"  data-cursor="cursor-scale" data-project-type="completed">
+                            <a href="attraction.html" data-attraction="0">
+                                <div class="places__title">Музей современного искусства «Garage»</div>
+                                <div class="carousel__wrap">
+                                    <div class="places__circle-wrap" data-ascent="-35">
+                                        <div class="places__circle"></div>
+                                    </div>
+                                    <div class="carousel__box">
+                                        <img class="carousel-img" src="./assets/img/garage.svg" alt="garage"/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__item"  data-cursor="cursor-scale" data-project-type="completed">
+                            <a href="attraction.html" data-attraction="1">
+                                <div class="places__title">
+                                    Здание транспортно-пересадочного узла МЦК «Панфиловская»
+                                </div>
+                                <div class="carousel__wrap">
+                                    <div class="places__circle-wrap" data-ascent="-30">
+                                        <div class="places__circle"></div>
+                                    </div>
+                                    <div class="carousel__box">
+                                        <img class="carousel-img" alt="panfilovskaya" src="./assets/img/panfilovskaya.svg"/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__item"  data-cursor="cursor-scale" data-project-type="completed">
+                            <a href="attraction.html" data-attraction="2">
+                                <div class="places__title">
+                                    Жилой комплекс премиум класса «Триумф-Палас»
+                                </div>
+                                <div class="carousel__wrap">
+                                    <div class="places__circle-wrap" data-ascent="0">
+                                        <div class="places__circle"></div>
+                                    </div>
+                                    <div class="carousel__box">
+                                        <img class="carousel-img" alt="triumph-palace" src="./assets/img/triumph-palace.svg"/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__item"  data-cursor="cursor-scale" data-project-type="completed">
+                            <a href="attraction.html" data-attraction="3">
+                                <div class="places__title">
+                                    Жилой комплекс премиум класса «Алые Паруса»
+                                </div>
+                                <div class="carousel__wrap">
+                                    <div class="places__circle-wrap" data-ascent="-35">
+                                        <div class="places__circle"></div>
+                                    </div>
+                                    <div class="carousel__box">
+                                        <img class="carousel-img" alt="scarlet-sails" src="./assets/img/scarlet-sails.svg"/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__item"  data-cursor="cursor-scale" data-project-type="completed">
+                            <a href="attraction.html" data-attraction="4">
+                                <div class="places__title">
+                                    Жилой комплекс премиум класса «Дом на Мосфильмовской»
+                                </div>
+                                <div class="carousel__wrap">
+                                    <div class="places__circle-wrap" data-ascent="58">
+                                        <div class="places__circle"></div>
+                                    </div>
+                                    <div class="carousel__box">
+                                        <img class="carousel-img" alt="mosfilmovskaya" src="./assets/img/mosfilmovskaya.svg"/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__item"  data-cursor="cursor-scale" data-project-type="completed">
+                            <a href="attraction.html" data-attraction="5">
+                                <div class="places__title">
+                                    Бизнес-центр «Оружейный»
+                                </div>
+                                <div class="carousel__wrap">
+                                    <div class="places__circle-wrap" data-ascent="70">
+                                        <div class="places__circle"></div>
+                                    </div>
+                                    <div class="carousel__box">
+                                        <img class="carousel-img" alt="armory" src="./assets/img/armory.svg"/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__item"  data-cursor="cursor-scale" data-project-type="progress">
+                            <a href="attraction.html" data-attraction="6">
+                                <div class="places__title">
+                                    Ледовый дворец «Кристалл» на территории Олимпийского комплекса «Лужники»
+                                </div>
+                                <div class="carousel__wrap">
+                                    <div class="places__circle-wrap" data-ascent="-30">
+                                        <div class="places__circle"></div>
+                                    </div>
+                                    <div class="carousel__box">
+                                        <img class="carousel-img" alt="crystal-ice" src="./assets/img/crystal-ice.svg"/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__item"  data-cursor="cursor-scale" data-project-type="progress">
+                            <a href="attraction.html" data-attraction="7">
+                                <div class="places__title">
+                                    Административно-торговое здание на территории Олимпийского комплекса «Лужники»
+                                </div>
+                                <div class="carousel__wrap">
+                                    <div class="places__circle-wrap" data-ascent="-30">
+                                        <div class="places__circle"></div>
+                                    </div>
+                                    <div class="carousel__box">
+                                        <img class="carousel-img" alt="luzhniki-trade" src="./assets/img/luzhniki-trade.svg"/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>    
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

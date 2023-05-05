@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достопримечательности</title>
+    <meta name="descriptin" content="@keyframes, javascript, js, observer, attraction">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="cursor cursor__rounded"></div>
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <div class="preloader__logo-line _left"></div>
+                <div class="preloader__logo-line _right"></div>
+                <div class="preloader__logo-sun"></div>
+            </div>
+            <div class="preloader__text">0%</div>
+        </div>
+    </div>
+    <header class="container-menu">
+        <div class="container-menu__nav">
+            <div class="row">
+                <div class="navbar accordion">
+                    <div class="navbar-conteiner">
+                        <div class="container-menu__logo">
+                            <div class="logotype"></div>
+                        </div>
+                        <div class="navbar-heder accordion-head" id="dropdown">
+                            <button type="button" class="navbar-toggle rs-menu-form__burger" >
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse" data-toggle-id="dropdown">
+                        <ul class="nav text-uppercase accordion-content container">
+                            <li class="menu_places" data-cursor="cursor-scale, darken"><a href="projects.html">Проекты</a></li>
+                            <li class="logo">
+                                <a href="/index.html" data-cursor="cursor-scale, darken">
+                                    <div class="logotype"></div>
+                                </a>
+                            </li>
+                            <li class="" data-cursor="cursor-scale, darken"><a href="http://helios.sborkademo.com/" target="_blank">Прототип</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="attraction">
+        <div class="attraction_row container">
+            <div class="filter__block">
+                <!-- <div class="content__filter"> -->
+                <div class="filter__content">
+                    <div class="filter__list">
+                        <div class="radio">
+                            <div class="button button__clear" type="radio" data-cursor="cursor-scale, darken">
+                                <input id="completed" type="radio" name="gender" value="male" checked>
+                                <!-- <label class="label-checked" for="completed">Завершенные</label> -->
+                                <label for="completed">Завершенные</label>
+                            </div>
+                            <div class="button button__clear" type="radio" data-cursor="cursor-scale, darken">
+                                <input id="plan" type="radio" name="gender" value="female">
+                                <label for="plan">В реализации</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="nav__pagination">
+                    <div class="pagination">
+                        <div class="pagination__delimeter" data-cursor="cursor-scale, lighten">...</div>
+                        <div class="pagination__wrap" data-index="0">
+                            <div class="pagination__item pagination__item_active" data-cursor="cursor-scale, lighten">1</div>
+                            <div class="pagination__divider pagination__divider_active"></div>
+                        </div>
+                        <div class="pagination__delimeter" data-cursor="cursor-scale, lighten">...</div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="nav__button">
+                <div class="button button__grey button__grey_t" data-cursor="cursor-scale, darken">Все проекты</div>
+            </div>
+        </div>
+
+        <!-- attraction окно все-->
+        <div class="attraction-slider__slider container">
+            <div class="attraction-slider__item">
+                <div class="attraction-main">
+                    <div class="attraction-main__content ">
+                        <div class="attraction-main__image fadeInUp">
+                            <!-- <div class="attraction__circle-wrap">
+                                <div class="attraction__circle"></div>
+                            </div> -->
+                            <div class="attraction__image-wrap">
+                                <div class="attraction__box">
+                                    <div class="attraction__circle-wrap">
+                                        <div class="attraction__circle"></div>
+                                    </div>
+                                    <img class="attraction-img" alt=""/>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 class="attraction-main__title fadeInUp"></h2>
+                        <div class="attraction-main__description fadeInUp"></div>
+                        <div class="attraction-main__info fadeInUp">
+                            <div class="attraction-main__info-row fadeInUp">
+                                <div class="attraction-main__info-col attraction-main__info-title">
+                                    Виды работ
+                                </div>
+                                <div class="attraction-main__info-col attraction-main__info-description"></div>
+                            </div>
+                            <div class="attraction-main__info-row fadeInUp">
+                                <div class="attraction-main__info-col attraction-main__info-title">
+                                    Общая площадь
+                                </div>
+                                <div class="attraction-main__info-col attraction-main__info-description">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Правая форма для показа 3-х картинок с наложением и с легкой аниме -->
+                    <div class="attraction-main__gallery anima">
+                        <div class="gallery-preview">
+                            <div class="gallery-preview__item gallery-preview__item_item-1 gravity__element fadeIn0" style="opacity: 0;">
+                                 <img class="gallery-preview-img"/>
+                            </div>
+                            <div class="gallery-preview__item gallery-preview__item_item-2 gravity__element fadeIn1"style="opacity: 0;">
+                                <img class="gallery-preview-img"/>
+                            </div>
+                            <div class="gallery-preview__item gallery-preview__item_item-3 gravity__element fadeIn2" style="opacity: 0;" >
+                                <img class="gallery-preview-img"/>
+                            </div>
+                            <div class="gallery-preview__button" data-cursor="cursor-scale, plus2" >
+                                <div class="gallery-preview__button-plus" data-animated="rotation"></div>
+                                <div class="gallery-preview__button-text">Галерея</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Окно-1 для показа 3-х слайдов с затененным фоном на неактивном -->
+    <section class="popup__gallery-desktop">
+        <div class="gallery">
+            <!-- <div class="gallery__item" style="max-width: 50%; width: 50%;"> -->
+            <div class="gallery__item">
+                <div class="gallery__image-wrap">
+                    <img class="gallery__image"/>
+                </div>
+                <div class="gallery__number"></div>
+                <div class="button-round" data-cursor="cursor-scale, plus2"></div>
+            </div>
+            <!-- <div class="gallery__item" style="max-width: 80%; width: 25%;"> -->
+            <div class="gallery__item">
+                <div class="gallery__image-wrap">
+                    <img class="gallery__image"/>
+                </div>
+                <div class="gallery__number"></div>
+                <div class="button-round" data-cursor="cursor-scale, plus2"></div>
+            </div>
+            <!-- <div class="gallery__item" style="max-width: 50%; width: 25%;"> -->
+            <div class="gallery__item">
+                <div class="gallery__image-wrap">
+                    <img class="gallery__image"/>
+                </div>
+                <div class="gallery__number"></div>
+                <div class="button-round" data-cursor="cursor-scale, plus2"></div>
+            </div>
+        </div>
+        <!-- Окно-2 small для показа слайдера с кнопками и превью -->
+        <div class="popup__gallery-small">
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider__item">
+                        <div class="gallery-small__image-wrap" data-index="1">
+                            <img class="gallery-small__image"/>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="gallery-small__image-wrap" data-index="2">
+                            <img class="gallery-small__image"/>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="gallery-small__image-wrap" data-index="3">
+                            <img class="gallery-small__image"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-round gallery__close_p"></div>
+                <div class="button__container">
+                    <div class="slider__control slider__control_left" href="#" role="button"></div>
+                    <div class="gallery-slider__counter">
+                        <span class="gallery-slider__num" data-slider-current="" style="opacity: 1;">1</span>
+                        <span class="text-color text-color_fw">из</span> 
+                        <span class="gallery-slider__num" data-slider-total="">3</span>
+                    </div>
+                    <div class="slider__control slider__control_right" href="#" role="button"></div>
+                </div>
+                <div class="slider-preview">
+                    <div class="slider-preview__wrap" data-index="1">
+                        <!-- <img class="gallery__image-small" src="./assets/img/house1.jpg" alt="house" /> -->
+                        <img class="gallery__image-small"/>
+                    </div>
+                    <div class="slider-preview__wrap" data-index="2">
+                        <!-- <img class="gallery__image-small" src="./assets/img/house2.jpg" alt="house" /> -->
+                        <img class="gallery__image-small" />
+                    </div>
+                    <div class="slider-preview__wrap" data-index="3">
+                        <!-- <img class="gallery__image-small" src="./assets/img/house3.jpg" alt="house" /> -->
+                        <img class="gallery__image-small"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
